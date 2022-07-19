@@ -2,7 +2,7 @@ def fibonacci(n):
     """
     Returns number at index n of the fibonacci sequence.
     :param n:
-    :return:
+    :return fibonacci(n-1) + fibonacci(n-2):
     """
     if n <= 0:
         return 0
@@ -15,7 +15,7 @@ def lucas(n):
     """
     Returns number at index n of the lucas sequence.
     :param n:
-    :return:
+    :return lucas(n-1) + lucas(n-2):
     """
     if n <= 0:
         return 2
@@ -26,11 +26,11 @@ def lucas(n):
 
 def sum_series(n, int1=0, int2=1):
     """
-
-    :param func:
+    Returns number at index n of either lucas or fibonacci sequence
+    :param n:
     :param int1:
     :param int2:
-    :return:
+    :return return fibonacci(n) or lucas(n):
     """
     if int1 == 0 and int2 == 1:
         return fibonacci(n)
