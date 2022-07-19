@@ -23,3 +23,16 @@ def lucas(n):
         return 1
 
     return lucas(n-1) + lucas(n-2)
+
+def sum_series(n, int1=0, int2=1):
+    """
+
+    :param func:
+    :param int1:
+    :param int2:
+    :return:
+    """
+    if int1 == 0 and int2 == 1:
+        return fibonacci(n)
+    if int1 == 2 and int2 == 1:
+        return lucas(n)
