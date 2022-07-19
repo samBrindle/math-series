@@ -89,3 +89,43 @@ def test_lucas_eight():
     actual = lucas(8)
     expected = 47
     assert actual == expected
+
+def test_sum_series_fibonacci_zero():
+    actual = sum_series(0)
+    expected = 0
+    assert actual == expected
+
+def test_sum_series_lucas_zero():
+    actual = sum_series(0, 2, 1)
+    expected = 2
+    assert actual == expected
+
+def test_sum_series_fibonacci_one():
+    actual = sum_series(1)
+    expected = 1
+    assert actual == expected
+
+def test_sum_series_lucas_one():
+    actual = sum_series(1, 2, 1)
+    expected = 1
+    assert actual == expected
+
+def test_sum_series_fibonacci_two():
+    actual = sum_series(2)
+    expected = 1
+    assert actual == expected
+
+def test_sum_series_lucas_two():
+    actual = sum_series(2, 2, 1)
+    expected = 3
+    assert actual == expected
+
+def test_sum_series_fibonacci_eight():
+    actual = sum_series(8)
+    expected = 21
+    assert actual == expected
+
+def test_sum_series_lucas_eight():
+    actual = sum_series(8, 2, 1)
+    expected = 47
+    assert actual == expected
